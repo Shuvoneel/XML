@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<company>
+    <Officer id="100" position="Manager">
+        <firstname>Mehedi</firstname>
+        <lastname>Hasan</lastname>
+        <nickname>Shuvo</nickname>
+        <salary>1,00,000</salary>
+        <email>mhshuvo@gmail.com</email>
+    </Officer>
+</company>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT employee (firstname|lastname|email)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT firstname (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT lastname (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT email (#PCDATA)>
