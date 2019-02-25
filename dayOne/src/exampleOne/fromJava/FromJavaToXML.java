@@ -25,47 +25,47 @@ public class FromJavaToXML {
 
             // root elements
             Document doc = docBuilder.newDocument();
-            Element rootElement = doc.createElement("company");
+            Element rootElement = doc.createElement("Company");
             doc.appendChild(rootElement);
 
-            // officer elements
-            Element officer = doc.createElement("Officer");
-            rootElement.appendChild(officer);
+            //  employee elements
+            Element employee = doc.createElement("Employee");
+            rootElement.appendChild(employee);
 
-            // set attribute "id" to officer element
+            // set attribute "id" to employee element
             Attr id = doc.createAttribute("id");
             id.setValue("100");
-            officer.setAttributeNode(id);
+            employee.setAttributeNode(id);
 
-            // set attribute "position" to officer element
-            Attr position = doc.createAttribute("position");
-            position.setValue("Manager");
-            officer.setAttributeNode(position);
+            // position elements
+            Element position = doc.createElement("position");
+            position.appendChild(doc.createTextNode("Manager"));
+            employee.appendChild(position);
 
             // firstname elements
             Element firstname = doc.createElement("firstname");
             firstname.appendChild(doc.createTextNode("Mehedi"));
-            officer.appendChild(firstname);
+            employee.appendChild(firstname);
 
             // lastname elements
             Element lastname = doc.createElement("lastname");
             lastname.appendChild(doc.createTextNode("Hasan"));
-            officer.appendChild(lastname);
+            employee.appendChild(lastname);
 
             // nickname elements
             Element nickname = doc.createElement("nickname");
             nickname.appendChild(doc.createTextNode("Shuvo"));
-            officer.appendChild(nickname);
+            employee.appendChild(nickname);
 
             // salary elements
             Element salary = doc.createElement("salary");
             salary.appendChild(doc.createTextNode("1,00,000"));
-            officer.appendChild(salary);
+            employee.appendChild(salary);
 
             // email elements
             Element email = doc.createElement("email");
             email.appendChild(doc.createTextNode("mhshuvo@gmail.com"));
-            officer.appendChild(email);
+            employee.appendChild(email);
 
             // write the content into xml file
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
